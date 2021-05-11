@@ -55,6 +55,13 @@ scp -P your_port -r root@122.207.108.1:/root/commonfile/data/coco pathto/data/
 scp -P 19710 -r root@122.207.82.55:/root/commonfile/data/coco ./
 
 
+### 其他数据集的获取方式
+scp -P your_port -r root@122.207.108.1:/root/commonfile/data/dataset_floder pathto/data/
+
+各个数据集对应的dataset_floder如下
+*coco: coco
+*voc: voc0712
+
 
 ## 说明
 可能需要修改的地方：
