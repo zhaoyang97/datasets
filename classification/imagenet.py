@@ -1,6 +1,6 @@
 # dataset settings
 
-# resnet50 2080ti最高可以设为64
+# resnet50 2080ti最高可以设为64. 修改的同时注意学习率的设置。
 batch_size = 32  # 每张GPU的图像数量
 
 dataset_type = 'ImageNet'

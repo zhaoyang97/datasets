@@ -1,10 +1,10 @@
 # dataset settings
 
 dataset_type = 'CocoDataset'
+image_root = '../data/coco/'
 data_root = '../data/coco/'
 annotations_root = '../data/coco/annotations/'
-image_root = '../data/coco/'
-# image_root = '/home/zhaoyang/container/data/TCTAnnotatedData/'
+
 
 # img_scale = (1000, 600)
 img_scale=(1333, 800)

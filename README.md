@@ -25,6 +25,7 @@
 - [x] idrid
 
 
+
 ## 使用方法
 以mmdetection为例，介绍配置coco数据集的方式：
 
@@ -54,9 +55,11 @@ scp -P your_port -r root@122.207.108.1:/root/commonfile/data/coco pathto/data/
 scp -P 19710 -r root@122.207.82.55:/root/commonfile/data/coco ./
 
 
+
 ## 说明
 可能需要修改的地方：
 每卡的图像改这个参数：samples_per_gpu
+
 
 
 ## 注意事项
