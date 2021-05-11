@@ -29,6 +29,8 @@
 以mmdetection为例，介绍配置coco数据集的方式：
 
 ### 1. 在mmdetection的同级目录下创建data文件夹
+
+```plain
 pathto
 ├── data
 ├── mmdetection
@@ -37,8 +39,12 @@ pathto
 │   ├── configs
 │   │   ├── _base_
 │   │   │   ├── datasets
+```
 
-### 2. 传数据集到data目录
+### 2. 添加配置文件
+将[coco_detection.py](detection/coco_detection.py)放到目录pathto/mmdetection/configs/_base_/datasets/下
+
+### 3. 传数据集到data目录
 
 TODO 由于内网无法访问rtx 2080 决定把数据集都传到xp4上
 
@@ -55,8 +61,10 @@ scp -P 19710 -r root@122.207.82.55:/root/commonfile/data/coco ./
 
 ## 注意事项
 
-### imagenet
-跑imagenet数据集要注意学习率的设置，默认的是8卡、每卡32图，学习率=0.01。学习率的设置：
+### 学习率的设置
+
+#### imagenet
+imagenet数据集默认的是8卡、每卡32图，学习率=0.01。学习率的设置：
 lr = 0.01 \* [卡数] \* [每卡图像] / (8\*32)
 例如用8卡、每卡64图，那么学习率应该设为0.01/2=0.005。
 
