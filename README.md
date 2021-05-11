@@ -25,7 +25,7 @@
 - [x] idrid
 
 
-
+<br>
 ## 使用方法
 以mmdetection为例，介绍配置coco数据集的方式：
 
@@ -59,8 +59,8 @@ scp -P 19710 -r root@122.207.82.55:/root/commonfile/data/coco ./
 scp -P your_port -r root@122.207.108.1:/root/commonfile/data/dataset_floder pathto/data/
 
 各个数据集对应的dataset_floder如下
-*coco: coco
-*voc: voc0712
+* coco: coco
+* voc: voc0712
 
 
 ## 说明
@@ -75,7 +75,7 @@ scp -P your_port -r root@122.207.108.1:/root/commonfile/data/dataset_floder path
 
 #### imagenet
 imagenet数据集默认的是8卡、每卡32图，学习率=0.01。学习率的设置：
-lr = 0.01 \* [卡数] \* [每卡图像] / (8\*32)
+lr = 0.01 \* [卡数] \* [每卡图像] / (8\*32). <br>
 例如用8卡、每卡64图，那么学习率应该设为0.01/2=0.005。
 
 ### tct
