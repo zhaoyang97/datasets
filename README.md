@@ -2,9 +2,9 @@
 
 ## 简介
 
-本项目旨在减少收集各种数据集的时间成本。<br>
+本项目旨在减少收集各种数据集的时间成本，可在mmlab系列框架上使用；如果用其他框架，任然可以使用本项目的数据集获取方式<br>
 
-本项目提供各种数据集及其配置文件的获取方式，所有的数据集已开放在RTX 2080 03的目录/root/commonfile/data，配置文件由本repo提供。<br>
+本项目提供各种数据集及其配置文件的获取方式，所有的配置文件由本repo提供，数据集已开放在 TODO RTX 2080 03的目录/root/commonfile/data <br>
 目前已支持以下数据集：
 
 分类
@@ -26,6 +26,27 @@
 
 
 ## 使用方法
+以mmdetection为例，介绍配置coco数据集的方式：
+
+### 1. 在mmdetection的同级目录下创建data文件夹
+pathto
+├── data
+├── mmdetection
+│   ├── mmdet
+│   ├── tools
+│   ├── configs
+│   │   ├── _base_
+│   │   │   ├── datasets
+
+### 2. 传数据集到data目录
+
+TODO 由于内网无法访问rtx 2080 决定把数据集都传到xp4上
+
+scp -P your_port -r root@122.207.108.1:/root/commonfile/data/coco pathto/data/
+
+
+scp -P 19710 -r root@122.207.82.55:/root/commonfile/data/coco ./
+
 
 ## 说明
 可能需要修改的地方：
