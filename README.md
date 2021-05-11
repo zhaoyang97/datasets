@@ -25,7 +25,7 @@
 - [x] idrid
 
 
-<\br>
+</br>
 
 ## 使用方法
 以mmdetection为例，介绍配置coco数据集的方式：
