@@ -59,7 +59,7 @@ scp -P 44120 -r root@202.197.66.62:/root/commonfile/data/coco ./
 ## 获取数据集
 scp -P your_port -r root@202.197.66.62:/root/commonfile/data/dataset_floder pathto/data/
 
-<div id='jump'> </div>把your_port换成自己的Titan_Xp_4账号对应的端口，pathto/data/换成第二步中新建的data文件夹目录，dataset_floder换成数据集的文件夹名，各个数据集对应的文件夹名如下：<br>
+把your_port换成自己的Titan_Xp_4账号对应的端口，pathto/data/换成第二步中新建的data文件夹目录，dataset_floder换成数据集的文件夹名，各个<div id='jump'>数据集</div>对应的文件夹名如下：<br>
 数据集：对应的dataset_floder
 * imagenet: imagenet
 * coco: coco
@@ -79,7 +79,7 @@ scp -P your_port -r root@202.197.66.62:/root/commonfile/data/dataset_floder path
 
 ### imagenet
 imagenet数据集默认的是8卡、每卡32图，学习率=0.01。
-使用不同的batchsize，学习率应该按照一以下公式设置：
+使用不同的batchsize，学习率应该按照以下公式设置：<br>
 lr = 0.01 \* [卡数] \* [每卡图像] / (8\*32). <br>
 例如用8卡、每卡64图，那么学习率应该设为0.01/2=0.005。
 
