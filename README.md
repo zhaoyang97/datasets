@@ -4,7 +4,7 @@
 
 本项目旨在减少收集各种数据集的时间成本，提供各种数据集的配置文件及其获取方式，数据集已开放在Titan_Xp_4的目录/root/commonfile/data
 * 可在mmlab系列框架上使用
-* 如果用其他框架，任然可以使用本项目的数据集获取方式
+* 如果用其他框架，任然可以使用本项目的提供的方式获取数据集
 
 
 目前已支持以下数据集：
@@ -49,17 +49,18 @@ pathto
 ```plain
 scp -P your_port -r root@202.197.66.62:/root/commonfile/data/coco pathto/data/
 ```
-把your_port换成自己的xp4账号对应的端口,pathto/data/换成第一步中新建的data文件夹目录，
+把your_port换成Titan_Xp_4账号对应的端口，pathto/data/换成第一步中新建的data文件夹目录。
 
 <!---
 // cd到data目录，然后执行
 scp -P 44120 -r root@202.197.66.62:/root/commonfile/data/coco ./
 -->
 
-### 其他数据集的获取方式
+## 数据集的获取方式
 scp -P your_port -r root@202.197.66.62:/root/commonfile/data/dataset_floder pathto/data/
 
-把your_port换成自己的xp4账号对应的端口，pathto/data/换成第二步中新建的data文件夹目录，dataset_floder换成数据集的文件夹名，各个数据集对应的文件夹名如下（数据集：对应的dataset_floder）：
+把your_port换成自己的Titan_Xp_4账号对应的端口，pathto/data/换成第二步中新建的data文件夹目录，dataset_floder换成数据集的文件夹名，各个数据集对应的文件夹名如下：<br>
+数据集：对应的dataset_floder
 * imagenet: imagenet
 * coco: coco
 * voc: voc0712
