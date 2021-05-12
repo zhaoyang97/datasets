@@ -15,7 +15,7 @@
 目标检测
 - [x] coco
 - [x] voc
-- [x] tct
+- [ ] tct
 
 语义分割
 - [x] ade20k
