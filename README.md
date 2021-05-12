@@ -49,7 +49,7 @@ pathto
 ```plain
 scp -P your_port -r root@202.197.66.62:/root/commonfile/data/coco pathto/data/
 ```
-把your_port换成Titan_Xp_4账号对应的端口，pathto/data/换成第一步中新建的data文件夹目录。
+把your_port换成Titan_Xp_4账号对应的端口，pathto/data/换成第二步中新建的data文件夹目录。
 
 <!---
 // cd到data目录，然后执行
