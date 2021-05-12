@@ -16,6 +16,7 @@
 - [x] coco
 - [x] voc
 - [ ] tct
+- [x] tianchi tct
 
 语义分割
 - [x] ade20k
@@ -66,13 +67,19 @@ scp -P your_port -r root@202.197.66.62:/root/commonfile/data/dataset_floder path
 * imagenet: imagenet
 * coco: coco
 * voc: voc0712
-* tct: ../TCTAnnotatedData
 * ade20k: ade20k
 * cityscapes：cityscapes
 * pascal context：voc0712
 * ddr：DDR  
 * idrid: IDRID
 
+## 获取tct数据集
+
+### 阿里天池tct数据集
+```plain
+scp -P 19230 -r root@122.207.82.55:/root/userfolder/tianchi/zipdata pathto/data/
+```
+天池数据集在rtx2080 03，[@冯硕](https://github.com/FengShuo96)的个人账号中，密码请咨询冯硕。
 
 ## 说明
 
@@ -90,6 +97,8 @@ lr = 0.01 \* [卡数] \* [每卡图像] / (8\*32). <br>
 
 ## 致谢
 感谢[@刘浩天](https://github.com/puzzledsky)提供的DDR和IDRiD数据集的注册文件。
+感谢[@冯硕](https://github.com/FengShuo96)提供的阿里天池数据集
+
 
 <!---
 ## 说明
