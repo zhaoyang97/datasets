@@ -15,7 +15,8 @@
 目标检测
 - [x] coco
 - [x] voc
-- [ ] tct
+- [x] tct 30000
+- [x] tct
 - [x] tianchi tct
 
 语义分割
@@ -67,19 +68,28 @@ scp -P your_port -r root@202.197.66.62:/root/commonfile/data/dataset_floder path
 * imagenet: imagenet
 * coco: coco
 * voc: voc0712
+* tct 30000: TCT_30000
 * ade20k: ade20k
 * cityscapes：cityscapes
 * pascal context：voc0712
 * ddr：DDR  
 * idrid: IDRID
 
+
 ## 获取tct数据集
+
+### 实验室的tct
+tct的小数据集tct 30000可以通过上一节提供的方式获取，完整的tct数据集获取方式如下：
+```plain
+scp -P your_port -r root@202.197.66.62:/root/commonfile/data/TCTAnnotatedData pathto/data/
+```
 
 ### 阿里天池tct数据集
 ```plain
 scp -P 19230 -r root@122.207.82.55:/root/userfolder/tianchi/zipdata pathto/data/
 ```
 天池数据集在rtx2080 03，[@冯硕](https://github.com/FengShuo96)的个人账号中，密码请咨询冯硕。
+
 
 ## 说明
 
@@ -97,7 +107,8 @@ lr = 0.01 \* [卡数] \* [每卡图像] / (8\*32). <br>
 
 ## 致谢
 感谢[@刘浩天](https://github.com/puzzledsky)提供的DDR和IDRiD数据集的注册文件<br>
-感谢[@冯硕](https://github.com/FengShuo96)提供的阿里天池tct数据集<br>
+感谢[@冯硕](https://github.com/FengShuo96)提供的阿里天池tct数据集和简化后的TCT_30000数据集<br>
+
 
 
 <!---
