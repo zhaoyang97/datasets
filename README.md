@@ -58,10 +58,10 @@ scp -P 44120 -r root@202.197.66.62:/root/commonfile/data/coco ./
 -->
 
 ## 获取数据集
+除tct相关数据集外，其余数据集均可通过以下命令获取：
 ```plain
 scp -P your_port -r root@202.197.66.62:/root/commonfile/data/dataset_floder pathto/data/
 ```
-
 把your_port换成Titan_Xp_4账号对应的端口，pathto/data/换成第二步中新建的data文件夹目录，dataset_floder换成数据集的文件夹名，各个数据集对应的文件夹名如下：<span id="get_dataset"></span>
 <br>数据集：对应的dataset_floder
 * imagenet: imagenet
@@ -96,8 +96,8 @@ lr = 0.01 \* [卡数] \* [每卡图像] / (8\*32). <br>
 
 
 ## 致谢
-感谢[@刘浩天](https://github.com/puzzledsky)提供的DDR和IDRiD数据集的注册文件。
-感谢[@冯硕](https://github.com/FengShuo96)提供的阿里天池数据集
+感谢[@刘浩天](https://github.com/puzzledsky)提供的DDR和IDRiD数据集的注册文件<br>
+感谢[@冯硕](https://github.com/FengShuo96)提供的阿里天池tct数据集<br>
 
 
 <!---
