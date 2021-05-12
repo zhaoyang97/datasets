@@ -5,8 +5,6 @@ image_root = '../data/coco/'
 data_root = '../data/coco/'
 annotations_root = '../data/coco/annotations/'
 
-
-# img_scale = (1000, 600)
 img_scale=(1333, 800)
 
 

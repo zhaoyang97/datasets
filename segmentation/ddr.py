@@ -1,15 +1,12 @@
 # dataset settings
 dataset_type = 'LesionDataset'
-# dataset_type = 'CustomDataset'
 data_root = '../data/DDR'
 
 img_norm_cfg = dict(
     mean=[81.205, 50.636, 21.216], std=[76.252, 48.798, 21.625], to_rgb=True)
-# TODO
 crop_size = (1024, 1024)
 img_scale = (1024, 1024)
-# crop_size = (768, 768)
-# img_scale = (768, 768)
+
 
 palette = [
     [0, 0, 0],

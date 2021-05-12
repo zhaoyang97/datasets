@@ -1,12 +1,13 @@
 # dataset settings
 
 # resnet50 2080ti最高可以设为64. 修改的同时注意学习率的设置。
-batch_size = 32  # 每张GPU的图像数量
+batch_size = 32 # 每张GPU的图像数量
 
 dataset_type = 'ImageNet'
 train_root = '../data/imagenet/ILSVRC2012/ILSVRC2012_img_train/'
 var_root = '../data/imagenet/ILSVRC2012/ILSVRC2012_img_val/'
 label_root = '../data/imagenet'
+
 
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)

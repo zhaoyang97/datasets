@@ -1,10 +1,12 @@
 # dataset settings
 dataset_type = 'LesionDataset'
-# dataset_type = 'CustomDataset'
 data_root = '../data/IDRID'
+
 img_norm_cfg = dict(
     mean=[116.513, 56.437, 16.309], std=[80.206, 41.232, 13.293], to_rgb=True)
 crop_size = (960, 1440)
+
+
 palette = [
     [0, 0, 0],
     [128, 0, 0],  # EX: red
