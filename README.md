@@ -78,6 +78,8 @@ scp -P your_port -r root@202.197.66.62:/root/commonfile/data/dataset_floder path
 
 ### DDR&IDRiD
 提供的DDR和IDRiD数据集是做过数据增广后的数据集，包括旋转90°、180°、270°、水平翻转、垂直翻转，算上原图一共是6倍。
+这两个数据集是自定义的数据集，如使用mmlab系列框架，需要注册数据集，流程如下：
+将[lesion_dataset.py](https://github.com/puzzledsky/mmsegmentation-lesion/blob/master/mmseg/datasets/lesion_dataset.py)和[custom.py](https://github.com/puzzledsky/mmsegmentation-lesion/blob/master/mmseg/datasets/custom.py)添加到目录mmsegmentation/mmseg/datasets，并在该目录下的\_\_init\_\_.py文件中添加`from .lesion_dataset import LesionDataset`, `__all__`中添加'LesionDataset'.
 
 ### imagenet
 imagenet数据集默认的是8卡、每卡32图，学习率=0.01。
