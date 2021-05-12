@@ -28,7 +28,10 @@
 ## 使用方法
 以mmdetection为例，介绍配置coco数据集的方式：
 
-### 1. 在mmdetection的同级目录下创建data文件夹
+### 1. 添加配置文件
+将[coco_detection.py](detection/coco_detection.py)放到目录pathto/mmdetection/configs/\_base\_/datasets/下
+
+### 2. 在mmdetection的同级目录下创建data文件夹
 
 ```plain
 pathto
@@ -41,18 +44,17 @@ pathto
 │   │   │   ├── datasets
 ```
 
-### 2. 添加配置文件
-将[coco_detection.py](detection/coco_detection.py)放到目录pathto/mmdetection/configs/\_base\_/datasets/下
-
 ### 3. 传数据集到data目录
+从xp4上获取coco数据集
+```plain
+scp -P your_port -r root@202.197.66.62:/root/commonfile/data/coco pathto/data/
+```
+把your_port换成自己的xp4账号对应的端口,pathto/data/换成第一步中新建的data文件夹目录，
 
-TODO 由于内网无法访问rtx 2080 决定把数据集都传到xp4上
-
-scp -P your_port -r root@122.207.108.1:/root/commonfile/data/coco pathto/data/
-
-
-scp -P 19710 -r root@122.207.82.55:/root/commonfile/data/coco ./
-
+<!---
+// cd到data目录，然后执行
+scp -P 44120 -r root@202.197.66.62:/root/commonfile/data/coco ./
+-->
 
 ### 其他数据集的获取方式
 scp -P your_port -r root@122.207.108.1:/root/commonfile/data/dataset_floder pathto/data/
