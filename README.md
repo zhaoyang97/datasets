@@ -2,7 +2,7 @@
 
 ## 简介
 
-本项目旨在减少收集各种数据集的时间成本，提供各种数据集的配置文件及其获取方式，数据集已开放在Titan_Xp_4的目录/root/commonfile/data
+本项目旨在减少收集各种数据集的时间成本，提供各种数据集的配置文件及其获取方式，数据集已开放在Titan_Xp_4的目录`/root/commonfile/data`
 * 可在mmlab系列框架上使用
 * 如果用其他框架，任然可以使用本项目的提供的方式[获取数据集](#get_dataset)
 
@@ -96,7 +96,7 @@ scp -P 19230 -r root@122.207.82.55:/root/userfolder/tianchi/zipdata pathto/data/
 ### DDR&IDRiD
 提供的DDR和IDRiD数据集是做过数据增广后的数据集，包括旋转90°、180°、270°、水平翻转、垂直翻转，算上原图一共是6倍。<br>
 这两个数据集是自定义的数据集，如使用mmlab系列框架，需要注册数据集，流程如下：<br>
-将[lesion_dataset.py](https://github.com/puzzledsky/mmsegmentation-lesion/blob/master/mmseg/datasets/lesion_dataset.py)和[custom.py](https://github.com/puzzledsky/mmsegmentation-lesion/blob/master/mmseg/datasets/custom.py)添加到目录mmsegmentation/mmseg/datasets，并在该目录下的\_\_init\_\_.py文件中添加`from .lesion_dataset import LesionDataset`, `__all__`中添加'LesionDataset'.
+将[lesion_dataset.py](https://github.com/puzzledsky/mmsegmentation-lesion/blob/master/mmseg/datasets/lesion_dataset.py)和[custom.py](https://github.com/puzzledsky/mmsegmentation-lesion/blob/master/mmseg/datasets/custom.py)添加到目录`mmsegmentation/mmseg/datasets`，并在该目录下的\_\_init\_\_.py文件中添加`from .lesion_dataset import LesionDataset`, `__all__`中添加'LesionDataset'.
 
 ### imagenet
 imagenet数据集默认的是8卡、每卡32图，学习率=0.01。
