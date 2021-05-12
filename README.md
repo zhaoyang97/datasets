@@ -58,11 +58,11 @@ scp -P 44120 -r root@202.197.66.62:/root/commonfile/data/coco ./
 -->
 
 ## 获取数据集
-除tct相关数据集外，其余数据集均可通过以下命令获取：
+除tct相关数据集外，其余数据集均可通过以下命令获取：<span id="get_dataset"></span>
 ```plain
 scp -P your_port -r root@202.197.66.62:/root/commonfile/data/dataset_floder pathto/data/
 ```
-把your_port换成Titan_Xp_4账号对应的端口，pathto/data/换成第二步中新建的data文件夹目录，dataset_floder换成数据集的文件夹名，各个数据集对应的文件夹名如下：<span id="get_dataset"></span>
+把your_port换成Titan_Xp_4账号对应的端口，pathto/data/换成第二步中新建的data文件夹目录，dataset_floder换成数据集的文件夹名，各个数据集对应的文件夹名如下：
 <br>数据集：对应的dataset_floder
 * imagenet: imagenet
 * coco: coco
