@@ -78,7 +78,7 @@ scp -P your_port -r root@202.197.66.62:/root/commonfile/data/dataset_floder path
 
 ## 获取tct数据集
 
-### 实验室的tct
+### 实验室的tct数据集
 tct的小数据集tct 30000可以通过上一节提供的方式获取，完整的tct数据集获取方式如下：
 ```plain
 scp -P your_port -r root@202.197.66.62:/root/commonfile/data/TCTAnnotatedData pathto/data/
