@@ -50,7 +50,7 @@ pathto
 ```plain
 scp -P your_port -r root@202.197.66.62:/root/commonfile/data/coco pathto/data/
 ```
-把your_port换成Titan_Xp_4账号对应的端口，pathto/data/换成第二步中新建的data文件夹目录。
+把your_port换成Titan_Xp_4账号对应的端口，pathto/data/换成第二步中新建的data文件夹目录。<span id="get_dataset"></span>
 
 <!---
 // cd到data目录，然后执行
@@ -58,7 +58,7 @@ scp -P 44120 -r root@202.197.66.62:/root/commonfile/data/coco ./
 -->
 
 ## 获取数据集
-除tct相关数据集外，其余数据集均可通过以下命令获取：<span id="get_dataset"></span>
+除tct相关数据集外，其余数据集均可通过以下命令获取：
 ```plain
 scp -P your_port -r root@202.197.66.62:/root/commonfile/data/dataset_floder pathto/data/
 ```
