@@ -1,7 +1,7 @@
 # dataset settings
 dataset_type = 'LesionDataset'
 # dataset_type = 'CustomDataset'
-data_root = '../data/eyes/DDR'
+data_root = '../data/DDR'
 
 img_norm_cfg = dict(
     mean=[81.205, 50.636, 21.216], std=[76.252, 48.798, 21.625], to_rgb=True)

@@ -25,8 +25,6 @@
 - [x] idrid
 
 
-</br>
-
 ## 使用方法
 以mmdetection为例，介绍配置coco数据集的方式：
 
@@ -44,7 +42,7 @@ pathto
 ```
 
 ### 2. 添加配置文件
-将[coco_detection.py](detection/coco_detection.py)放到目录pathto/mmdetection/configs/_base_/datasets/下
+将[coco_detection.py](detection/coco_detection.py)放到目录pathto/mmdetection/configs/\_base\_/datasets/下
 
 ### 3. 传数据集到data目录
 
@@ -59,16 +57,24 @@ scp -P 19710 -r root@122.207.82.55:/root/commonfile/data/coco ./
 ### 其他数据集的获取方式
 scp -P your_port -r root@122.207.108.1:/root/commonfile/data/dataset_floder pathto/data/
 
-各个数据集对应的dataset_floder如下
+把your_port换成自己的xp4账号对应的端口,pathto/data/换成第一步中新建的data文件夹目录，各个数据集对应的dataset_floder如下（数据集：对应的dataset_floder）：
+* imagenet: imagenet
 * coco: coco
 * voc: voc0712
+* tct: ../TCTAnnotatedData
+* ade20k: ade20k
+* cityscapes：cityscapes
+* pascal context：voc0712
+* ddr：DDR  
+* idrid: IDRID
+
 
 
 ## 说明
 可能需要修改的地方：
 每卡的图像改这个参数：samples_per_gpu
 
-
+提供的DDR和IDRiD数据集是做过数据增广后的数据集，包括旋转90°、180°、270°、水平翻转、垂直翻转，算上原图一共是6倍。
 
 ## 注意事项
 
@@ -81,3 +87,4 @@ lr = 0.01 \* [卡数] \* [每卡图像] / (8\*32). <br>
 
 ### tct
 tct数据集只提供了图像，注释文件需要自己放入对应目录。
+TODO 收集tct的注释文件
